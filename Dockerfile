@@ -1,7 +1,7 @@
 FROM microsoft/vsts-agent:ubuntu-16.04
 
 # Install python
-RUN apk add python2 py-pip
+RUN apt update && apt install python2.7 python-pip
 
 # Upgrade pip
 RUN pip install --upgrade pip
