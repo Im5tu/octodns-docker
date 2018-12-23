@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM microsoft/vsts-agent:ubuntu-16.04
 
 # Install python
 RUN apk add python2 py-pip
